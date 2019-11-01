@@ -88,4 +88,14 @@ public class PatientResource {
 		return ResponseEntity.noContent().build();
 	}
 	
+	/**
+	 * Empty method just to verify the token
+	 * 
+	 * @return
+	 */
+	@PostMapping("/patients/verifytoken")
+	public ResponseEntity<Object> verifyToken() {
+		return ResponseEntity.noContent().build();
+	}
+	
 }
